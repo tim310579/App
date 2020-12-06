@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Symptom p.3"
+        android:textSize="36dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#686868" />
+    <TextView
+        android:id="@+id/tv_asthma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your asthma treatment level and diagnosis severity\n0(normal)->4(severe)"
+        android:textSize="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_asthma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/radiobutton1_asthma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0(No need to take drugs)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton2_asthma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1(Use controller or take controller pills)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton3_asthma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2(Use controller and take controller pills)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton4_asthma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3(Take reliever 4 time a day until stridor is cured)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton5_asthma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4(Need emergency aid)"
+            />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tv_a_rhinitis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your a_rhinitis treatment level and diagnosis severity, 0(normal)->3(severe)"
+        android:textSize="16dp"/>
+    <RadioGroup
+        android:id="@+id/radiogroup_a_rhinitis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/radiobutton1_a_rhinitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0(Normal)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton2_a_rhinitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1(Mild)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton3_a_rhinitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2(Apply nose pharmaceutical preparation)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton4_a_rhinitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3(Take anti-allergy pills and apply nose pharmaceutical preparation)"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_miss_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="#f20505" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_page2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                >
+                <Button
+                    android:id="@+id/btn_page4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="next"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

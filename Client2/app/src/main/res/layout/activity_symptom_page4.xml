@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Symptom p.4"
+        android:textSize="36dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#686868" />
+
+    <TextView
+        android:id="@+id/tv_a_conjunctivitis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your a_conjunctivitis treatment level and diagnosis severity, 0(normal)->2(severe)"
+        android:textSize="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_a_conjunctivitis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/radiobutton1_a_conjunctivitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0(Normal)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton2_a_conjunctivitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1(Allergy)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton3_a_conjunctivitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2(Chronicle allergy and irritation)"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_a_dermatitis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your a_dermatitis treatment level and diagnosis severity, 0(normal)->3(severe)"
+        android:textSize="16dp"/>
+    <RadioGroup
+        android:id="@+id/radiogroup_a_dermatitis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/radiobutton1_a_dermatitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0(Normal)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton2_a_dermatitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1(Mild)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton3_a_dermatitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2(Allergy)"
+            />
+        <RadioButton
+            android:id="@+id/radiobutton4_a_dermatitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3(Chronicle allergy)"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_miss_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="#f20505" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_page3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                >
+                <Button
+                    android:id="@+id/btn_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ok"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

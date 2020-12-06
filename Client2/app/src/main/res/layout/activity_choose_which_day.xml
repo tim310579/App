@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="生理資料輸入"
+        android:textColor="#000000"
+        android:layout_margin="15dp"
+        android:textSize="38dp" />
+    <TextView
+        android:id="@+id/title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="選擇日期"
+        android:textColor="#000000"
+        android:layout_margin="25dp"
+        android:textSize="38dp" />
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/id_yesterday"
+            android:layout_width="151dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="left"
+            android:textSize="30dp"
+            android:background="@drawable/button_setting1"
+            android:text="昨天" />
+
+        <Button
+            android:id="@+id/id_today"
+            android:layout_width="151dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:textSize="30dp"
+            android:background="@drawable/button_setting2"
+            android:layout_gravity="right"
+            android:text="今天" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/Back_home"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_rounde"
+            android:drawableLeft="@drawable/ic_launcher" />
+    </LinearLayout>
+
+</LinearLayout>

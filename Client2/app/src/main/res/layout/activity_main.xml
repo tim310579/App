@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:src="@drawable/tmp" />
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/look_profile"
+            android:layout_width="151dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:background="@drawable/button_setting1"
+            android:text="個人資料設定" />
+
+        <Button
+            android:id="@+id/fill_in_symptom"
+            android:layout_width="151dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/button_setting2"
+            android:layout_gravity="right"
+            android:text="生理資料輸入" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/goto_predict"
+            android:layout_width="151dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/button_setting3"
+            android:layout_gravity="left"
+            android:text="氣喘情況預測" />
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="151dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/button_setting4"
+            android:layout_gravity="right"
+            android:text="天氣空污查看" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/Back_home"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_rounde"
+            android:drawableLeft="@drawable/ic_launcher" />
+    </LinearLayout>
+
+</LinearLayout>
